@@ -15,12 +15,12 @@ private:
 graph::graph(int v){
     this->num_of_vertices = v;
     adj = new vector<int>[v];//this creates 2 d vector
-
 }
+
 void graph::addedge(int from, int to){
-adj[from].push_back( to ); // this adds the "to" variable to the list of "from" variable
-
+adj[from].push_back( to ); // this adds the "to" vertex to the list of "from" vertex
 }
+
 void graph::dfs(int start){
     bool* visited = new bool[this->num_of_vertices]();// creates array of bool type
 

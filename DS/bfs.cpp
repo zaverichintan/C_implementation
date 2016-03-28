@@ -15,14 +15,14 @@ private:
     void bfs(int start);
     void draw();
 };
+
 graph::graph(int v){
     this->num_of_vertices = v;
     adj = new vector<int>[v];//this creates 2 d vector
-
 }
+
 void graph::addedge(int from, int to){
 adj[from].push_back( to ); // this adds the "to" variable to the list of "from" variable
-
 }
 
 void graph::bfs(int start){

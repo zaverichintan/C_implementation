@@ -19,10 +19,6 @@ void move(stack<int> &from, stack<int> &to)
 cout<<t1<<t2;
 
 }
-else cout<<"asd";
-//from.print();
-//to.print();
-cout<<endl;
 }
 
 int main(){
